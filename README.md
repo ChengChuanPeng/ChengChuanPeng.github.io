@@ -1,3 +1,3 @@
 # ChengChuanPeng.github.io
 
-links: chengchuanpeng.github.io/
+links: chengchuanpeng.github.io
