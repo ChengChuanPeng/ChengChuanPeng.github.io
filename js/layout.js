@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     let skillsets = {
-        "Splunk": ["Go", "OpenTelemetry", "K8s"],
-        "Advantech": ["C#", "ASP.NET"],
-        "Titansoft": ["C#", ".NET CORE",],
-        "Micron": ["SQL", "Snowflake", "Python", "NiFi", "Splunk"]
+        "Splunk": ["Go", "OpenTelemetry", "Kubernetes", "GitHub Actions"],
+        "Advantech": ["C#", ".NET MVC", "Azure Pipelines", "Azure Blob", "Azure Cosmos DB"],
+        "Titansoft": ["C#", ".NET CORE", "Redis", "GRPC", "GCP Spanner", "GCP Pub/Sub"],
+        "Micron": ["SQL", "Snowflake", "Python", "Flask", "NiFi", "Splunk", "Docker", "Openshift", "Hadoop", "Hive", "Hbase"]
     };
 
     let jobs = document.querySelectorAll(".job");
@@ -11,12 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
     jobs.forEach(job => {
         let company = job.getAttribute("data-company");
         let skills = skillsets[company];
-        
-        let skillList = job.querySelector(".skills");
-        skills.forEach(skill => {
-            let listItem = document.createElement("li");
-            listItem.textContent = skill;
-            skillList.appendChild(listItem);
-        });
+
+        let jobPara = job.querySelector("p");
+        let skillText = "<strong>Skillset: </strong> " + skills.join(", "); 
+        jobPara.innerHTML += skillText; // Append the skills to the existing job text using innerHTML since we're adding HTML content
     });
 });
