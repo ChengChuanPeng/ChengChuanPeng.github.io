@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "Splunk": ["Go", "OpenTelemetry", "Kubernetes", "GitHub Actions"],
         "Advantech": ["C#", ".NET MVC", "Azure Pipelines", "Azure Blob", "Azure Cosmos DB"],
         "Titansoft": ["C#", ".NET CORE", "Redis", "GRPC", "GCP Spanner", "GCP Pub/Sub"],
-        "Micron": ["SQL", "Snowflake", "Python", "Flask", "NiFi", "Splunk", "Docker", "Openshift", "Hadoop", "Hive", "Hbase"]
+        "Micron": ["SQL", "Snowflake", "Python", "Flask", "Airflow", "Shell Script", "NiFi", "Splunk", "Docker", "Openshift", "Hadoop", "Hive", "Hbase"]
     };
 
     let jobs = document.querySelectorAll(".job");
