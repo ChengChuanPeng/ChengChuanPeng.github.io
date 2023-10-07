@@ -93,7 +93,17 @@
         #topBtn:hover {
             background-color: #555;
         }
+        
+        h3 {
+            display: flex;
+            align-items: center; /* align vertically */
+        }
 
+        .lang-logo {
+            height: 48px; /* Adjust this value as per your needs */
+            width: auto; /* maintain aspect ratio */
+            margin-right: 10px; /* some spacing between logo and text */
+        }
     </style>
 </head>
 
@@ -129,7 +139,7 @@
     <section class="content" id="skill">
         <h2>My Skills</h2>
         <ul>
-            <li>Programming Languages: <img src="python.png" alt="Python3 Logo" width="20"> Python3, <img src="csharp.png" alt="C# Logo" width="20">C#, <img src="node.png" alt="node Logo" width="20">Nodejs, <img src="java.png" alt="java Logo" width="20">Java,  <img src="go.png" alt="go Logo" width="20">Go, Shell Script</li>
+            <li>Programming Languages: <img src="static/images/python.png" alt="Python3 Logo" class="lang-logo"><img src="static/images/csharp.png" alt="C# Logo" class="lang-logo"><img src="static/images/node.png" alt="node Logo" class="lang-logo"><img src="static/images/java.png" alt="java Logo" class="lang-logo"><img src="static/images/go.png" alt="go Logo" class="lang-logo">, Shell Script</li>
             <li>Backend: .NET Core/MVC, Python Flask/Django, Express.js, Spring Boot</li>
             <li>Databases: MySQL, MSSQL, MongoDB, Hbase, Hive, Snowflake</li>
             <li>Tools and Platforms: Linux, Git, AWS, Azure, Docker, OpenShift, Hadoop, Splunk, NiFi, Airflow, Opentelemtry</li>
@@ -158,24 +168,24 @@
     <section class="content" id="experience">
         <h2>Experience</h2>
         <div class="job" data-company="Splunk">
-            <h3><a href="https://www.splunk.com/" target="_blank">Splunk</a>, Software Engineer, May 2023 - Aug 2023</h3>
+            <h3><a href="https://www.splunk.com/" target="_blank"> Splunk</a>, Software Engineer, May 2023 - Aug 2023</h3>
             <h4>Team: <a href="https://opentelemetry.io" target="_blank">OpenTelemtry</a></h4>
             <p><ul class="skills"></ul></p>
         </div>
         <div class="job" data-company="Advantech">
-            <h3><a href="https://www.advantech.com/en" target="_blank">Advantech</a>, Backend Engineer, Jul 2021 - Apr 2022</h3>
+            <h3><a href="https://www.advantech.com/en" target="_blank"> Advantech</a>, Backend Engineer, Jul 2021 - Apr 2022</h3>
             <h4>Team: WiseMarket</h4>
-            <h4>Website:<a href="https://wise-paas.advantech.com/en-us/marketplace" target="_blank">WiseMarket</a>, <a href="https://academy.advantech.com/en/courses" target="_blank">Advantech IoT Academy</a></h4>
+            <h4>Website: <a href="https://wise-paas.advantech.com/en-us/marketplace" target="_blank">WiseMarket</a>, <a href="https://academy.advantech.com/en/courses" target="_blank">Advantech IoT Academy</a></h4>
             <p><ul class="skills"></ul></p>
         </div>
         <div class="job" data-company="Titansoft">
-            <h3><a href="https://www.titansoft.com/en" target="_blank">Titansoft</a>, Backend Engineer, Feb 2021 - May 2021</h3>
+            <h3><a href="https://www.titansoft.com/en" target="_blank"> Titansoft</a>, Backend Engineer, Feb 2021 - May 2021</h3>
             <h4>Team: Game Development</h4>
             <p><ul class="skills"></ul></p>
         </div>
         <div class="job" data-company="Micron">
-            <h3><a href="https://www.micron.com" target="_blank">Micron Technology</a>, Data Engineer, Dec 2019 - Jan 2021</h3>
-            <h4>Team: Smart Manufaturing AI</h4>
+            <h3><a href="https://www.micron.com" target="_blank"> Micron Technology</a>, Data Engineer, Dec 2019 - Jan 2021</h3>
+            <h4>Team: Smart Manufacturing AI</h4>
             <p><ul class="skills"></ul></p>
         </div>
     </section>
