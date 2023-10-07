@@ -100,9 +100,23 @@
         }
 
         .lang-logo {
-            height: 48px; /* Adjust this value as per your needs */
+            height: 36px; /* Adjust this value as per your needs */
             width: auto; /* maintain aspect ratio */
-            margin-right: 10px; /* some spacing between logo and text */
+            margin-right: 7.5px; /* some spacing between logo and text */
+        }
+        .shell-logo {
+            height: 72px; /* Adjust this value as per your needs */
+            width: auto; /* maintain aspect ratio */
+            margin-right: 7.5px; /* some spacing between logo and text */
+        }
+        #skill li {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; /* This ensures that if items overflow, they wrap onto the next line */
+            margin-bottom: 20px;
+        }
+        .label {
+        margin-right: 20px; 
         }
     </style>
 </head>
@@ -139,7 +153,7 @@
     <section class="content" id="skill">
         <h2>My Skills</h2>
         <ul>
-            <li>Programming Languages: <img src="static/images/python.png" alt="Python3 Logo" class="lang-logo"><img src="static/images/csharp.png" alt="C# Logo" class="lang-logo"><img src="static/images/node.png" alt="node Logo" class="lang-logo"><img src="static/images/java.png" alt="java Logo" class="lang-logo"><img src="static/images/go.png" alt="go Logo" class="lang-logo">, Shell Script</li>
+            <li><span class="label">Programming Languages:</span>  <img src="static/images/python.png" alt="Python3 Logo" class="lang-logo"><img src="static/images/csharp.png" alt="C# Logo" class="lang-logo"><img src="static/images/node.png" alt="node Logo" class="lang-logo"><img src="static/images/java.png" alt="java Logo" class="lang-logo"><img src="static/images/go.png" alt="go Logo" class="lang-logo"><img src="static/images/pngwing.com.png" alt="shell Logo" class="shell-logo"></li>
             <li>Backend: .NET Core/MVC, Python Flask/Django, Express.js, Spring Boot</li>
             <li>Databases: MySQL, MSSQL, MongoDB, Hbase, Hive, Snowflake</li>
             <li>Tools and Platforms: Linux, Git, AWS, Azure, Docker, OpenShift, Hadoop, Splunk, NiFi, Airflow, Opentelemtry</li>
