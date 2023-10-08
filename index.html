@@ -126,6 +126,25 @@
             border-radius: 10px;
             margin-top: 20px;
         }
+
+        .frame {
+            padding: 10px;
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        .img-larger {
+        width: 500px;
+        max-width: 100%; /* This ensures the image doesn't overflow its container on smaller screens */
+        height: auto;    /* This maintains the aspect ratio of the image */
+    }
     </style>
 </head>
 
@@ -169,10 +188,15 @@
     </section>
 
     <section class="content" id="work">
-        <h2>My Projects</h2>
+        <h2>My Course Projects</h2>
         <div class="project">
-            <p> <a href="Cheng-Chuan-Peng_College_Project.pdf" target="_blank">My Past Project</a></p>
+            <p> <a href="Cheng-Chuan-Peng_College_Project.pdf" target="_blank">My Course Projects</a></p>
         </p>
+
+        <div class="frame">
+            <div class="caption">Course Meeting Room System</div>
+            <img src="static/images/course.png" alt="CMU Meeting Room System" class="img-larger">
+        </div>
 
         <h2>Presentation</h2>
         <div class="present">
