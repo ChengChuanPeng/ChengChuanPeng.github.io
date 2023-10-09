@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+document.querySelector(".flip-button").addEventListener('click', function() {
+    const card = document.querySelector('.flip-card-content');
+    card.style.transform = card.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)';
+});
+
 function populateSkills() {
         let skillsets = {
         "Splunk": ["Go", "OpenTelemetry", "Kubernetes", "GitHub Actions"],
@@ -42,4 +47,15 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+function toggleFlip(btn) {
+    const card = btn.previousElementSibling;
+    const inner = card.querySelector('.flip-card-inner');
+    if (inner.style.transform === "rotateY(180deg)") {
+        inner.style.transform = "";
+    } else {
+        inner.style.transform = "rotateY(180deg)";
+    }
 }
